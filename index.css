@@ -1,0 +1,30 @@
+.animation {
+    width: 150px;
+    height: 150px;
+    background-color: #f00;
+    transition-property: background-color;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+}
+/*
+div {
+    transform: translateX(100px) translateY(150px) scale(2) rotate(145deg);
+}
+ */
+div:hover {
+    background-color: #ff0;
+}
+/*-------------Анимация---------*/
+@keyframes Move {
+    15% {transform: translateX(100px);}
+    30% {transform: translateX(100px) translateY(150px);}
+    45% {transform: translateX(100px) translateY(150px) scale(2) rotate(145deg);}
+    55% {transform: translateX(100px) translateY(150px) scale(2) rotate(145deg);}
+    70% {transform: translateX(100px) translateY(150px);}
+    85% {transform: translateX(100px);}
+}
+.animation {
+    animation-name: Move;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
